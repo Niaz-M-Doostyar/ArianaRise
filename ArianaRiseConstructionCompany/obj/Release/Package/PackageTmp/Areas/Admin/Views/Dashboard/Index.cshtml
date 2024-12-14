@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<!-- start page content -->
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <div class="page-bar">
+            <div class="page-title-breadcrumb">
+                <div class=" pull-right">
+                    <div class="page-title">بورډ</div>
+                </div>
+                <ol class="breadcrumb page-breadcrumb pull-left">
+                    <li>
+                        <i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+                                                           href="@Url.Action("Index","Dashboard")">کورپاڼه</a>&nbsp;<i class="fa fa-angle-right"></i>
+                    </li>
+                    <li class="active">ډشبورډ</li>
+                </ol>
+            </div>
+        </div>
+        <style>
+            .info-box-text {
+                font-size: 24px;
+                color: black;
+                text-decoration: double
+            }
+            .page-footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%
+            }
+        </style>
+        <!-- start widget -->
+        <div class="state-overview">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="info-box bg-b-green">
+                        <span class="info-box-icon push-bottom"><i class="material-icons" style="font-size: 60px">view_list</i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">مجموعی فورمونه</span>
+                            <span class="info-box-number">@ViewBag.TotalFormsCount</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description">
+                                د ټولو فورمونو تعداد
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="info-box bg-b-yellow">
+                        <span class="info-box-icon push-bottom"><i class="material-icons" style="font-size: 60px">view_list</i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">د نن ورځی فورمونه</span>
+                            <span class="info-box-number">@ViewBag.TotalDailyFormsCount</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description">
+                                د نن ورځی ټول فورمونو تعداد
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-xl-3 col-md-6 col-12">
+                    <div class="info-box bg-b-blue">
+                        <span class="info-box-icon push-bottom"><i class="material-icons" style="font-size: 60px">account_balance</i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">د نن ورځی مصرف</span>
+                            <span class="info-box-number">@ViewBag.TotalDailyFormsTotalPrice افغانی</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description">
+                                د نن ورځی د ټولو فورمونو مجموعی مصرف
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end widget -->
+    </div>
+</div>
+<!-- end page content -->

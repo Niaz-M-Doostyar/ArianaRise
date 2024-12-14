@@ -1,0 +1,81 @@
+﻿<table id="customers">
+    <tr>
+        <th>شماره</th>
+        <th colspan="2">فعالیت های ساختمانی</th>
+        <th>واحد</th>
+        <th>حجم کار قبلی</th>
+        <th>حجم کار امروز</th>
+        <th>مجموع حجم کارشده</th>
+        <th>ملاحضه</th>
+    </tr>
+    <tr>
+        <input type="hidden" name="J_Name1" value="کندن کاری در خاک نرم" />
+        <input type="hidden" name="J_Unit1" value="متر مکعب" />
+        <td>1</td>
+        <td colspan="2">کندن کاری در خاک نرم</td>
+        <td>متر مکعب</td>
+        <td><input type="number" class="form-control" name="J_Quantity1" id="J_quantity1" /></td>
+        <td><input type="number" class="form-control" name="J_PricePerUnit1" id="J_pricePerUnit1" onkeyup="calculateTotalWork(this.value, 'J_totalPrice1','J_quantity1');" /></td>
+        <td><input type="text" class="form-control" disabled name="J_TotalPrice1" id="J_totalPrice1" /></td>
+        <td><input type="text" class="form-control" name="J_Comment1" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="J_Name2" value="کند کاری در سنګ خشک" />
+        <input type="hidden" name="J_Unit2" value="متر مکعب" />
+        <td>2</td>
+        <td colspan="2">کند کاری در سنګ خشک</td>
+        <td>متر مکعب</td>
+        <td><input type="number" class="form-control" name="J_Quantity2" id="J_quantity2" /></td>
+        <td><input type="number" class="form-control" name="J_PricePerUnit2" id="J_pricePerUnit2" onkeyup="calculateTotalWork(this.value, 'J_totalPrice2', 'J_quantity2');" /></td>
+        <td><input type="text" class="form-control" disabled name="J_TotalPrice2" id="J_totalPrice2" /></td>
+        <td><input type="text" class="form-control" name="J_Comment2" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="J_Name3" value="پرکاری مع تپک کاری" />
+        <input type="hidden" name="J_Unit3" value="متر مکعب" />
+        <td>3</td>
+        <td colspan="2">پرکاری مع تپک کاری</td>
+        <td>متر مکعب</td>
+        <td><input type="number" class="form-control" name="J_Quantity3" id="J_quantity3" /></td>
+        <td><input type="number" class="form-control" name="J_PricePerUnit3" id="J_pricePerUnit3" onkeyup="calculateTotalWork(this.value, 'J_totalPrice3', 'J_quantity3');" /></td>
+        <td><input type="text" class="form-control" disabled name="J_TotalPrice3" id="J_totalPrice3" /></td>
+        <td><input type="text" class="form-control" name="J_Comment3" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="J_Name4" value="کانکریت ریزی سیخ دار" />
+        <input type="hidden" name="J_Unit4" value="متر مکعب" />
+        <td>4</td>
+        <td colspan="2">کانکریت ریزی سیخ دار</td>
+        <td>متر مکعب</td>
+        <td><input type="number" class="form-control" name="J_Quantity4" id="J_quantity4" /></td>
+        <td><input type="number" class="form-control" name="J_PricePerUnit4" id="J_pricePerUnit4" onkeyup="calculateTotalWork(this.value, 'J_totalPrice4', 'J_quantity4');" /></td>
+        <td><input type="text" class="form-control" disabled name="J_TotalPrice4" id="J_totalPrice4" /></td>
+        <td><input type="text" class="form-control" name="J_Comment4" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="J_Name5" value="کانکریت کتله ای" />
+        <input type="hidden" name="J_Unit5" value="متر مکعب" />
+        <td>5</td>
+        <td colspan="2">کانکریت کتله ای</td>
+        <td>متر مکعب</td>
+        <td><input type="number" class="form-control" name="J_Quantity5" id="J_quantity5" /></td>
+        <td><input type="number" class="form-control" name="J_PricePerUnit5" id="J_pricePerUnit5" onkeyup="calculateTotalWork(this.value, 'J_totalPrice5', 'J_quantity5');" /></td>
+        <td><input type="text" class="form-control" disabled name="J_TotalPrice5" id="J_totalPrice5" /></td>
+        <td><input type="text" class="form-control" name="J_Comment5" /></td>
+
+    </tr>
+    <tr>
+        <td>6</td>
+        <td colspan="2"><input type="text"  name="J_Name6" class="form-control" /></td>
+        <td><input type="text" name="J_Unit6" class="form-control" /></td>
+        <td><input type="number" class="form-control" name="J_Quantity6" id="J_quantity6" /></td>
+        <td><input type="number" class="form-control" name="J_PricePerUnit6" id="J_pricePerUnit6" onkeyup="calculateTotalWork(this.value, 'J_totalPrice6', 'J_quantity6');" /></td>
+        <td><input type="text" class="form-control" disabled name="J_TotalPrice6" id="J_totalPrice6" /></td>
+        <td><input type="text" class="form-control" name="J_Comment6" /></td>
+
+    </tr>
+</table>

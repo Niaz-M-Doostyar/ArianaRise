@@ -1,0 +1,77 @@
+﻿@model ArianaRiseConstructionCompany.Models.Db.tbl_projects
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- start page content -->
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <div class="page-bar">
+            <div class="page-title-breadcrumb">
+                <div class=" pull-right">
+                    <div class="page-title">نوی پروژه معلومات</div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .info-box-text {
+                font-size: 24px;
+                color: black;
+                text-decoration: double
+            }
+
+            .page-footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%
+            }
+        </style>
+
+        <div class="row">
+            <div class="col-xl-6 col-md-12 col-12">
+                
+                <div>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Location)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Location)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.CreatedDate)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CreatedDate)
+                        </dd>
+
+                    </dl>
+                </div>
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

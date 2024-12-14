@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d7c803c06ba347368f61ee7eb11b0041" Name="Diagram1">
+        <EntityTypeShape EntityType="ArianaRiseCCModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.AspNetRole" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.AspNetUser" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_aradajat" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_da_kar_da_parmakhtag_jadwal" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_da_nan_wraze_karz" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_markaze_daftar_ta_peshnehadat" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_mashenare_karaya" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_masrafe_motafaraqa_mawad" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_motar_tarmim_aw_normasayal" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_sahawe_daftar_karaya_aw_mashat" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_sakhtamane_mawad" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_shawahed" Width="1.5" PointX="4.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="ArianaRiseCCModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ArianaRiseCCModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ArianaRiseCCModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_karaya" Width="1.5" PointX="7.375" PointY="11.75" />
+        <EntityTypeShape EntityType="ArianaRiseCCModel.tbl_projects" Width="1.5" PointX="11.375" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

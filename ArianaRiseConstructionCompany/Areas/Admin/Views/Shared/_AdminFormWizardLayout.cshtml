@@ -1,0 +1,295 @@
+﻿@using System.Collections.Specialized
+
+<!DOCTYPE html>
+<html dir="rtl">
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Responsive Admin Template" />
+    <meta name="author" content="Ariana Rise" />
+    <title>Arian Rise Construction Company</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- icons -->
+    <link href="/Content/AdminTemplete/source/rtl/fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@("@@fortawesome")/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="/Content/AdminTemplete/source/rtl/fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap -->
+    <link href="/Content/AdminTemplete/source/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/AdminTemplete/source/assets/plugins/summernote/summernote.css" rel="stylesheet">
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="/Content/AdminTemplete/source/assets/plugins/material/material.min.css">
+    <link rel="stylesheet" href="/Content/AdminTemplete/source/assets/plugins/material/material.rtl.min.css">
+    <link rel="stylesheet" href="/Content/AdminTemplete/source/assets/css/material_style.css">
+    <!-- inbox style -->
+    <link href="/Content/AdminTemplete/source/assets/css/pages/inbox.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme Styles -->
+    <link href="/Content/AdminTemplete/source/assets/css/theme/rtl/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+    <link href="/Content/AdminTemplete/source/assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/AdminTemplete/source/assets/css/theme/rtl/style.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/AdminTemplete/source/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/AdminTemplete/source/assets/css/theme/rtl/theme-color.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/AdminTemplete/source/assets/css/theme/rtl/rtl.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Content/AdminTemplete/source/assets/img/favicon.ico" />
+    @RenderSection("links", false)
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md sidemenu-container-reversed header-white white-sidebar-color logo-indigo">
+    <div class="page-wrapper">
+        <!-- start header -->
+        <div class="page-header navbar navbar-fixed-top">
+            <div class="page-header-inner ">
+                <!-- logo start -->
+                <div class="page-logo">
+                    <a href="@Url.Action("Index","Dashboard")">
+                        <span class="logo-default">اریانا رایز ساختمانی شرکت</span>
+                    </a>
+                </div>
+                <!-- logo end -->
+                <ul class="nav navbar-nav navbar-right in">
+                    <li><a href="@Url.Action("Index","Dashboard")#" class="menu-toggler sidebar-toggler"><i class="fa fa-bars"></i></a></li>
+                </ul>
+
+                <a class="menu-toggler responsive-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                    <span></span>
+                </a>
+                <!-- end mobile menu -->
+                <!-- start header menu -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+
+                        <!-- start manage user dropdown -->
+                        <li class="dropdown dropdown-user">
+                            <a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
+                               data-close-others="true">
+                                <img alt="" class="img-circle " src="/Content/AdminTemplete/source/assets/img/dp.jpg" />
+                                <span class="username username-hide-on-mobile" style="font-size: 35px"></span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+
+
+                                <li>
+                                    <a href="login.html">
+                                        <i class="icon-logout"></i> وتل
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="fullscreen-btn"><i class="fa fa-arrows-alt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- start color quick setting -->
+        <div class="settingSidebar">
+            <a href="javascript:void(0)" class="settingPanelToggle">
+                <i class="fa fa-spin fa-cog"></i>
+            </a>
+            <div class="settingSidebar-body ps-container ps-theme-default">
+                <div class=" fade show active">
+                    <div class="setting-panel-header text-right">
+                        Setting Panel
+                    </div>
+                    <div class="quick-setting slimscroll-style">
+                        <ul id="themecolors">
+                            <li>
+                                <p class="sidebarSettingTitle">Sidebar Color</p>
+                            </li>
+                            <li class="complete">
+                                <div class="theme-color sidebar-theme text-right">
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="white">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="dark">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="blue">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="indigo">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="cyan">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="green">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="red">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="sidebarSettingTitle">Header Brand color</p>
+                            </li>
+                            <li class="theme-option">
+                                <div class="theme-color logo-theme text-right">
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="logo-white">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="logo-dark">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="logo-blue">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="logo-indigo">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="logo-cyan">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="logo-green">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="logo-red">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="sidebarSettingTitle">Header color</p>
+                            </li>
+                            <li class="theme-option">
+                                <div class="theme-color header-theme text-right">
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="header-white">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="header-dark">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="header-blue">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="header-indigo">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="header-cyan">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="header-green">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                    <a href="@Url.Action("Index","Dashboard")#" data-theme="header-red">
+                                        <span class="head"></span><span class="cont"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end color quick setting -->
+        <!-- start page container -->
+        <div class="page-container">
+            <!-- start sidebar menu -->
+            <div class="sidebar-container">
+                <div class="sidemenu-container navbar-collapse collapse fixed-menu">
+                    <div id="remove-scroll" class="left-sidemenu">
+                        <ul class="sidemenu  page-header-fixed" data-keep-expanded="false" data-auto-scroll="true"
+                            data-slide-speed="200" style="padding-top: 20px">
+                            <li class="sidebar-toggler-wrapper hide">
+                                <div class="sidebar-toggler">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="sidebar-user-panel">
+                                <div class="user-panel">
+                                    <div class="pull-left image">
+                                        <img src="/Content/AdminTemplete/source/assets/img/dp.jpg" class="img-circle user-img-circle"
+                                             alt="User Image" />
+                                    </div>
+                                    <div class="pull-left info">
+                                        <p style="font-family: jam;font-size: 25px"> احمد</p>
+                                        <a href="@Url.Action("Index","Dashboard")#">
+                                            <i class="fa fa-circle user-online"></i><span class="txtOnline" style="font-family: jam;font-size: 25px">
+                                                انلاین
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item start active open">
+                                <a href="@Url.Action("Index","Dashboard")" class="nav-link nav-toggle">
+                                    <span class="title">ډشبورډ</span>
+                                    <i class="material-icons">dashboard</i>
+                                    <span class="selected"></span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Dashboard")#" class="nav-link nav-toggle">
+                                    <i class="material-icons">description</i>
+                                    <span class="title">A10 فورم</span> <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Index", "A10Form")" class="nav-link ">
+                                            <i class="material-icons">view_list</i>
+                                            <span class="title" style="font-size: 20px">
+                                                ټول فورمونه کتل
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="@Url.Action("Create", "A10Form")" class="nav-link ">
+                                            <i class="material-icons">add_circle_outline</i>
+                                            <span class="title" style="font-size: 20px">
+                                                نوی فورم اضافه کول
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="@Url.Action("Index","Dashboard")#" class="nav-link nav-toggle">
+                                    <i class="material-icons">description</i>
+                                    <span class="title">راپورونه</span> <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item">
+                                        <a href="all_department.html" class="nav-link ">
+                                            <span class="title">
+                                                All
+                                                Departments
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end sidebar menu -->
+            @RenderBody()
+        </div>
+        <!-- end page container -->
+        <!-- start footer -->
+        <div class="page-footer">
+            <div class="page-footer-inner">
+                2021 &copy;
+                <a href="#" target="_top" class="makerCss">Ariana Rise Construction Company</a>
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+    @RenderSection("scripts", false)
+</body>
+
+</html>

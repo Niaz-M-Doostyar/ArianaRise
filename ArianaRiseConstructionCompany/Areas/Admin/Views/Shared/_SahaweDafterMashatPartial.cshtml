@@ -1,0 +1,49 @@
+﻿<table id="customers">
+    <tr>
+        <th colspan="2">نوم او تشریح</th>
+        <th colspan="2">واحد</th>
+        <th>تعداد</th>
+        <th>فی واحد قیمت</th>
+        <th>مجموعی قیمت</th>
+        <th>ملاحضه</th>
+    </tr>
+    <tr>
+        <input type="hidden" name="G_Name1" value="کارمندان روزمزد" />
+        <input type="hidden" name="G_Unit1" value="فی نفر" />
+        <td colspan="2">کارمندان روزمزد</td>
+        <td colspan="2">فی نفر</td>
+        <td><input type="text" class="form-control" name="G_Quantity1" id="G_quantity1" /></td>
+        <td><input type="text" class="form-control" name="G_PricePerUnit1" id="G_pricePerUnit1" onkeyup="calculateTotalPrice(this.value, 'G_totalPrice1','G_quantity1');" /></td>
+        <td><input type="text" class="form-control" name="G_TotalPrice1" id="G_totalPrice1" /></td>
+        <td><input type="text" class="form-control" name="G_Comment1" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="G_Name2" value="کارمندان دفتر" />
+        <td colspan="2">کارمندان دفتر</td>
+        <input type="hidden" class="form-control" name="G_Quantity2" value="" />
+        <input type="hidden" class="form-control" name="G_PricePerUnit2" value="" />
+        <td colspan="4"><input type="text" name="G_Unit2" class="form-control" /></td>
+        <td><input type="text" class="form-control" name="G_TotalPrice2" id="G_totalPrice2" /></td>
+        <td><input type="text" class="form-control" name="G_Comment2" /></td>
+    </tr>
+    <tr>
+        <input type="hidden" name="G_Name3" value="تیکه داران" />
+        <td colspan="3">تیکه داران</td>
+        <td><input type="text" name="G_Unit3" class="form-control" /></td>
+        <td><input type="text" class="form-control" name="G_Quantity3" id="G_quantity3" /></td>
+        <td><input type="text" class="form-control" name="G_PricePerUnit3" id="G_pricePerUnit3" onkeyup="calculateTotalPrice(this.value, 'G_totalPrice3', 'G_quantity3');" /></td>
+        <td><input type="text" class="form-control" name="G_TotalPrice3" id="G_totalPrice3" /></td>
+        <td><input type="text" class="form-control" name="G_Comment3" /></td>
+    </tr>
+    <tr>
+        <input type="hidden" name="G_Name4" value="کرایه دفتر" />
+        <td colspan="2">کرایه دفتر</td>
+        <input type="hidden" class="form-control" name="G_Quantity4" value="" />
+        <input type="hidden" class="form-control" name="G_PricePerUnit4" value="" />
+        <td colspan="4"><input type="text" name="G_Unit4" class="form-control" /></td>
+        <td><input type="text" class="form-control" name="G_TotalPrice4" id="G_totalPrice4" /></td>
+        <td><input type="text" class="form-control" name="G_Comment4" /></td>
+
+    </tr>
+</table>

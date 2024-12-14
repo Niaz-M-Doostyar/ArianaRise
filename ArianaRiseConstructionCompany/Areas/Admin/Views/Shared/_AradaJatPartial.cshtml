@@ -1,0 +1,77 @@
+﻿<table id="customers">
+    <tr>
+        <th colspan="2">نوم او تشریح</th>
+        <th colspan="2">واحد</th>
+        <th>تعداد</th>
+        <th>فی واحد قیمت</th>
+        <th>مجموعی قیمت</th>
+        <th>ملاحضه</th>
+    </tr>
+    <tr>
+        <input type="hidden" name="B_Name1" value="موتر" />
+        <input type="hidden" name="B_Unit1" value="لیټر" />
+        <td colspan="2">موتر</td>
+        <td colspan="2">لیټر</td>
+        <td><input type="number" class="form-control" name="B_Quantity1" id="B_quantity1" /></td>
+        <td><input type="number" class="form-control" name="B_PricePerUnit1" id="B_pricePerUnit1" onkeyup="calculateTotalPrice(this.value, 'B_totalPrice1','B_quantity1');" /></td>
+        <td><input type="text" class="form-control" disabled name="B_TotalPrice1" id="B_totalPrice1" /></td>
+        <td><input type="text" class="form-control" name="B_Comment1" /></td>
+
+    </tr>
+
+    <tr>
+        <input type="hidden" name="B_Name2" value="اکسکواټر" />
+        <input type="hidden" name="B_Unit2" value="لیټر" />
+        <td colspan="2">اکسکواټر</td>
+        <td colspan="2">لیټر</td>
+        <td><input type="number" class="form-control" name="B_Quantity2" id="B_quantity2" /></td>
+        <td><input type="number" class="form-control" name="B_PricePerUnit2" id="B_pricePerUnit2" onkeyup="calculateTotalPrice(this.value, 'B_totalPrice2', 'B_quantity2');" /></td>
+        <td><input type="text" class="form-control" disabled name="B_TotalPrice2" id="B_totalPrice2" /></td>
+        <td><input type="text" class="form-control" name="B_Comment2" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="B_Name3" value="میکسر" />
+        <input type="hidden" name="B_Unit3" value="لیټر" />
+        <td colspan="2">میکسر</td>
+        <td colspan="2">لیټر</td>
+        <td><input type="number" class="form-control" name="B_Quantity3" id="B_quantity3" /></td>
+        <td><input type="number" class="form-control" name="B_PricePerUnit3" id="B_pricePerUnit3" onkeyup="calculateTotalPrice(this.value, 'B_totalPrice3', 'B_quantity3');" /></td>
+        <td><input type="text" class="form-control" disabled name="B_TotalPrice3" id="B_totalPrice3" /></td>
+        <td><input type="text" class="form-control" name="B_Comment3" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="B_Name4" value="واټرپمپ" />
+        <input type="hidden" name="B_Unit4" value="لیټر" />
+        <td colspan="2">واټرپمپ</td>
+        <td colspan="2">لیټر</td>
+        <td><input type="number" class="form-control" name="B_Quantity4" id="B_quantity4" /></td>
+        <td><input type="number" class="form-control" name="B_PricePerUnit4" id="B_pricePerUnit4" onkeyup="calculateTotalPrice(this.value, 'B_totalPrice4', 'B_quantity4');" /></td>
+        <td><input type="text" class="form-control" disabled name="B_TotalPrice4" id="B_totalPrice4" /></td>
+        <td><input type="text" class="form-control" name="B_Comment4" /></td>
+
+    </tr>
+    <tr>
+        <input type="hidden" name="B_Name5" value="جنراتور" />
+        <input type="hidden" name="B_Unit5" value="لیټر" />
+        <td colspan="2">جنراتور</td>
+        <td colspan="2">لیټر</td>
+        <td><input type="number" class="form-control" name="B_Quantity5" id="B_quantity5" /></td>
+        <td><input type="number" class="form-control" name="B_PricePerUnit5" id="B_pricePerUnit5" onkeyup="calculateTotalPrice(this.value, 'B_totalPrice5', 'B_quantity5');" /></td>
+        <td><input type="text" class="form-control" disabled name="B_TotalPrice5" id="B_totalPrice5" /></td>
+        <td><input type="text" class="form-control" name="B_Comment5" /></td>
+    </tr>
+    <tr>
+        <input type="hidden" name="B_Name6" value="تپک" />
+        <input type="hidden" name="B_Unit6" value="لیټر" />
+        <td colspan="2">تپک</td>
+        <td colspan="2">لیټر</td>
+        <td><input type="number" class="form-control" name="B_Quantity6" id="B_quantity6" /></td>
+        <td><input type="number" class="form-control" name="B_PricePerUnit6" id="B_pricePerUnit6" onkeyup="calculateTotalPrice(this.value, 'B_totalPrice6', 'B_quantity6');" /></td>
+        <td><input type="text" class="form-control" disabled name="B_TotalPrice6" id="B_totalPrice6" /></td>
+        <td><input type="text" class="form-control" name="B_Comment6" /></td>
+    </tr>
+
+
+</table>

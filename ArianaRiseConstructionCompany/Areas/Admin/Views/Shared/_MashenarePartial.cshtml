@@ -1,0 +1,38 @@
+﻿
+<table id="customers">
+    <tr>
+        <th colspan="2">نوم او تشریح</th>
+        @*<th colspan="2">واحد</th>*@
+        <th>تعداد</th>
+        <th>فی واحد قیمت</th>
+        <th>مجموعی قیمت</th>
+        <th>ملاحضه</th>
+    </tr>
+    <tr>
+        <input type="hidden" name="F_Name1" value="اکسکواتر" />
+        <td colspan="2">اکسکواتر</td>
+        <td><input type="number" class="form-control" name="F_Quantity1" id="F_quantity1" /></td>
+        <td><input type="number" class="form-control" name="F_PricePerUnit1" id="F_pricePerUnit1" onkeyup="calculateTotalPrice(this.value, 'F_totalPrice1','F_quantity1');" /></td>
+        <td><input type="text" class="form-control" disabled name="F_TotalPrice1" id="F_totalPrice1" /></td>
+        <td><input type="text" class="form-control" name="F_Comment1" /></td>
+
+    </tr>
+
+    <tr>
+        <td colspan="2"><input type="text" name="F_Name2" class="form-control" /></td>
+        <td><input type="number" class="form-control" name="F_Quantity2" id="F_quantity2" /></td>
+        <td><input type="number" class="form-control" name="F_PricePerUnit2" id="F_pricePerUnit2" onkeyup="calculateTotalPrice(this.value, 'F_totalPrice2','F_quantity2');" /></td>
+        <td><input type="text" class="form-control" disabled name="F_TotalPrice2" id="F_totalPrice2" /></td>
+        <td><input type="text" class="form-control" name="F_Comment2"/></td>
+
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" name="F_Name3" class="form-control" /></td>
+        <td><input type="number" class="form-control" name="F_Quantity3" id="F_quantity3" /></td>
+        <td><input type="number" class="form-control" name="F_PricePerUnit3" id="F_pricePerUnit3" onkeyup="calculateTotalPrice(this.value, 'F_totalPrice3','F_quantity3');" /></td>
+        <td><input type="text" class="form-control" disabled name="F_TotalPrice3" id="F_totalPrice3" /></td>
+        <td><input type="text" class="form-control" name="F_Comment3"/></td>
+
+    </tr>
+
+</table>
